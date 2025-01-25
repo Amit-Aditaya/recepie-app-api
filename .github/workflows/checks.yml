@@ -16,6 +16,7 @@ jobs:
 
       - name: Ensure Docker is running
         run: |
+          sudo systemctl unmask docker
           sudo systemctl start docker
           sudo systemctl enable docker  
 
